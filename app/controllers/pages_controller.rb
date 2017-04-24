@@ -24,5 +24,10 @@ class PagesController < ApplicationController
   end
 
   def person
+    name= params[:name]
+    age=params[:age]
+    
+    @per=Person.new(name,age.to_i)
+    
   end
 end
